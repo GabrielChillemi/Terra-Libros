@@ -1,7 +1,7 @@
 .info4 {
     display: flex;
     justify-content: space-evenly;
-    border-top: 1px solid #4E6E58;
+    border-top: 1px solid map-get($color, 1);
     padding: 40px 25px 0 25px;
     margin: 30px 20px 20px 20px;
 

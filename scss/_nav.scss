@@ -4,7 +4,7 @@ nav {
     grid-template-rows: 1fr;
     grid-template-areas: "i i s s s s l l l l l l";
     width: 100%;
-    background: #4E6E58;
+    background: map-get($color, 1);
     position: static;
     justify-content: space-between;
     text-align: center;
@@ -20,7 +20,7 @@ nav {
 
         a {
             text-decoration: none;
-            color: #F0DFAD;
+            color: map-get($color, 3);
             letter-spacing: 2px;
         }
     }
@@ -36,7 +36,7 @@ nav {
             margin: 0 5px;
 
             a {
-                color: #F0DFAD;
+                color: map-get($color, 3);
                 font-size: 20px;
                 text-decoration: none;
                 text-transform: capitalize;
@@ -46,8 +46,8 @@ nav {
         }
 
         li:hover a {
-            background: #F0DFAD;
-            color: #4E6E58
+            background: map-get($color, 3);
+            color: map-get($color, 1);
         }
     }
 
@@ -62,7 +62,7 @@ nav {
         input {
             border: none;
             outline: none;
-            background: #FDF0D5;
+            background: map-get($color, 2);
             height: 100%;
             padding: 0 10px;
             font-size: 20px;
@@ -72,7 +72,7 @@ nav {
         span {
             color: #8E5572;
             font-size: 20px;
-            background: #FDF0D5;
+            background: map-get($color, 2);
             height: 100%;
             padding: 8px;
             position: relative;
@@ -81,14 +81,14 @@ nav {
         }
 
         span:hover {
-            color: #FDF0D5;
+            color: map-get($color, 2);
         }
 
         span::after {
             height: 100%;
             width: 0%;
             content: '';
-            background: #8E5572;
+            background: map-get($color, 4);
             position: absolute;
             top: 0;
             right: 0;

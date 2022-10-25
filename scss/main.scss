@@ -14,7 +14,7 @@
 }
 
 body {
-    background: #FDF0D5;
+    background: map-get($color, 2);
 }
 
 /* Estilo Carousel */
@@ -44,8 +44,8 @@ body {
 .book-container {
     width: 204px;
     height: 400px;
-    background-color: #EBCFB2;
-    border: 2px solid #8E5572;
+    background-color: map-get($color, 5);
+    border: 2px solid map-get($color, 4);
 
     h4, h5 {
         font-size: 1.2rem;
@@ -63,12 +63,12 @@ body {
 }
 
 .separador {
-    border: 1px solid #8E5572;
+    border: 1px solid map-get($color, 4);
 }
 
 .separador-b {
     margin: 5px 5px 1px 5px;
-    border: 1px solid #8E5572;
+    border: 1px solid map-get($color, 4);
 }
 
 @media screen and (max-width: 1400px) {
