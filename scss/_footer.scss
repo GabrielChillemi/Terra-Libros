@@ -1,0 +1,30 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin: 20px 10px 5px 10px;
+
+    i {
+        font-size: 40px;
+    }
+    
+    h2 {
+        padding-left: 4px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0
+    }
+
+    li {
+        font-size: .8rem;
+        font-family: sans-serif;
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+}

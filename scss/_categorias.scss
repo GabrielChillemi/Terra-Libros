@@ -1,0 +1,46 @@
+.categorias {
+    h2 {
+        text-align: center;
+        margin: 20px 33% 30px 33%;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #8E5572;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        text-align: start;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-top: 30px;
+            font-size: 1.3rem;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                text-decoration: underline #5C80BC;
+            }
+        }
+    }
+}
+ 
+@media screen and (max-width: 777px) {
+    .categorias ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .categorias ul li {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,122 @@
+@import "variables";
+@import "nav";
+@import "info4";
+@import "newsletter";
+@import "footer";
+@import "categorias";
+@import "masVendidosyRecomendados";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    background: #FDF0D5;
+}
+
+/* Estilo Carousel */
+
+.container-md {
+    margin-top: 20px;
+}
+
+/* Estilo Recomendados y Más Leidos */
+
+.books-slider {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2fr;
+    grid-template-areas: "t t t t t t";
+    justify-items: center;
+    width: 100%;
+}
+
+.img-books-1 {
+    width: 200px;
+    height: 300px;
+}
+
+.book-container {
+    width: 204px;
+    height: 400px;
+    background-color: #EBCFB2;
+    border: 2px solid #8E5572;
+
+    h4, h5 {
+        font-size: 1.2rem;
+        padding: 2px;
+    }
+}
+
+.book-slider-title {
+    grid-area: t;
+    margin-bottom: 20px;
+
+    h2 {
+        margin-bottom: 2px;
+    }
+}
+
+.separador {
+    border: 1px solid #8E5572;
+}
+
+.separador-b {
+    margin: 5px 5px 1px 5px;
+    border: 1px solid #8E5572;
+}
+
+@media screen and (max-width: 1400px) {
+    .books-slider {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas: 
+        "t t t";
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .books-slider {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr 1fr 1fr;
+        grid-template-areas: 
+        "t t";
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .books-slider {
+        margin-top: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas: 
+        "t t t";
+    }
+
+    .book-slider-title {
+        margin-bottom: 0px;
+    }
+
+    .book-container {
+        width: 104px;
+        height: 200px;
+
+        img {
+            width: 100px;
+            height: 150px;
+        }
+
+        h4, h5 {
+            font-size: .55rem;
+            padding-left: 2px;
+            margin: 0;
+        }
+    }
+}
